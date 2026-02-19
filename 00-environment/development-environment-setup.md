@@ -20,34 +20,34 @@ Understanding this stack makes environment setup intentional rather than mechani
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-## Add Homebrew to PATH (Apple Silicon Macs)
+## 2. Add Homebrew to PATH (Apple Silicon Macs)
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-## Verify Homebrew installation
+## 3. Verify Homebrew installation
 brew --version
 
-## Install Python
+## 4. Install Python
 brew install python
 
-## Verify installation
+## 5. Verify installation
 python3 --version
 which python3
 
-## Install VS Code
+## 6. Install VS Code
 brew install --cask visual-studio-code
 
-## Verify installation
+## 7. Verify installation
 code --version
 
-## Install uv
+## 8. Install uv
 brew install uv
 
-## Verify installation
+## 9. Verify installation
 uv --version
 
-## Create virtual environment
+## 10. Create virtual environment
 uv venv
 
-## Activate environment
+## 11. Activate environment
 source .venv/bin/activate
