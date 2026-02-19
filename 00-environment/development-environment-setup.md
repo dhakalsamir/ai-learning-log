@@ -18,40 +18,36 @@ Understanding this stack makes environment setup intentional rather than mechani
 
 ## 1. Install Homebrew (macOS Package Manager)
 
-
-# Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# Add Homebrew to PATH (Apple Silicon Macs)
+## Add Homebrew to PATH (Apple Silicon Macs)
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Verify Homebrew installation
+## Verify Homebrew installation
 brew --version
 
-# Install Python
+## Install Python
 brew install python
 
-# Verify installation
+## Verify installation
 python3 --version
 which python3
 
-# Install VS Code
+## Install VS Code
 brew install --cask visual-studio-code
 
-# Verify installation
+## Verify installation
 code --version
 
-
-# Install uv
+## Install uv
 brew install uv
 
-# Verify installation
+## Verify installation
 uv --version
 
-
-# Create virtual environment
+## Create virtual environment
 uv venv
 
-# Activate environment
+## Activate environment
 source .venv/bin/activate
